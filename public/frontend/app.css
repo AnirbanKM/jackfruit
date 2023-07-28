@@ -1,0 +1,55 @@
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    text-align: center;
+    vertical-align: baseline;
+}
+
+/*** Responsive CSS  ***/
+
+@media (min-width: 992px) {
+
+    .seachArea form input,
+    .seachArea form select {
+        width: 24%;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .seachArea form input,
+    .seachArea form select {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .taskTable table tbody tr td a {
+        text-wrap: nowrap;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .seachArea form input,
+    .seachArea form select {
+        width: 49%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .seachArea form {
+        margin-bottom: 10px;
+    }
+
+    .seachArea form input,
+    .seachArea form select {
+        width: 100%;
+    }
+}
